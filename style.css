@@ -15,26 +15,29 @@ body{
     background: #FFFFFF;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     border-radius: 4px;
+    display: grid;
+    grid-template: repeat(7, auto)/ 1fr;
+    gap: 5px;
 }
 .project_name{
     line-height: 22px;
     font-size: 18px;
     letter-spacing: -0.02em;
     color: #3E3934;
-    padding: 40px 35px 0;
+    align-self: end;
 }
 .project_date{
     font-size: 12px;
     letter-spacing: -0.01em;
     color: #9F9C9A;
-    padding: 5px 35px 60px;
 }
 .order{
     font-size: 12px;
     letter-spacing: -0.01em;
     color: #9F9C9A;
     padding-bottom: 15px;
-    border-bottom: 1px solid #E9E9EC;;
+    border-bottom: 1px solid #E9E9EC;
+    align-self: end;
 }
 .order_status{
     font-size: 12px;
@@ -42,6 +45,7 @@ body{
 }
 .avatar{
     position: relative;
+    align-self: center;
 }
 .avatar_img{
     width: 36px;
@@ -49,7 +53,9 @@ body{
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
     border-radius: 115px;
     border: 1px solid #E9E9EC;
-    margin: 20px;
+}
+.avatar_img:hover{
+    border: 1px solid #0096D7;
 }
 .avatar_notification{
     width: 14px;
@@ -66,10 +72,11 @@ body{
     font-size: 14px;
     letter-spacing: -0.01em;
     color: #9F9C9A;
-    padding: 0 27px;
-}
-.order_response span{
-    padding: 0;
+    width: 80%;
+    max-height: 160px;
+justify-self: center;
+overflow: scroll;
+    align-self: center;
 }
 .button_see_proposal{
     background: #0096D7;
@@ -80,8 +87,10 @@ body{
     border: none;
     border-radius: 4px;
     color: #FFFFFF;
-    padding: 8px 30px;
-    margin: 30px 68px 15px;
+        height: 40px;
+        width: 54%;
+        align-self: center;
+        justify-self: center;
     outline: none;
     cursor: pointer;
 }
@@ -93,6 +102,5 @@ body{
     font-size: 12px;
     letter-spacing: -0.01em;
     color: #0096D7;
-    padding-bottom: 20px;
     text-decoration: none;
 }
