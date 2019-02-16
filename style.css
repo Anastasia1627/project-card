@@ -67,7 +67,8 @@ body{
     border: 2px solid #FFFFFF;
     border-radius: 50%;
     position: absolute;
-    left: 155px;
+    left: 150px;
+    top: -5px;
 }
 .order_response, .order_response span{
     line-height: 18px;
