@@ -78,7 +78,7 @@ body{
     width: 80%;
     max-height: 160px;
     justify-self: center;
-    overflow: scroll;
+    overflow: hidden;
     align-self: center;
 }
 .button_see_proposal{
